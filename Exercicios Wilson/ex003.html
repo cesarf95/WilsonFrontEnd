@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dobro de um número</title>
+</head>
+<body>
+  <h2>Calcular o dobro de um número</h2>
+
+  <script>
+    // Lê o número digitado pelo usuário
+    let numero1 = parseFloat(prompt("Digite um número:"));
+
+    // Calcula o dobro
+    let dobro = numero1 * 2;
+
+    // Mostra o resultado no console
+    console.log(`O dobro de ${numero1} é ${dobro.toFixed(2)}`);
+
+    // Mostra o resultado na página também
+    document.write(`O dobro de ${numero1} é <strong>${dobro.toFixed(2)}</strong>`);
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+        
+button {
+  background-color: #1beb21; 
+  color: white; 
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id = "titulo">Texto 1</h1>
+    
+    <button id="botao">Mudar o texto</button>
+<button id="botao1">Clique Ali</button>
+
+    
+    <script>
+       botao.addEventListener("click", function() {
+        titulo.style.color = "Red";
+        titulo.style.fontSize = "20px";
+        titulo.textContent = "Texto diferente"
+       });
+        
+    </script>
+</body>
+</html>
