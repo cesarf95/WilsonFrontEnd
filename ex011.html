@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Soma dos Pares ≤ N</title>
+</head>
+<body>
+  <h1>Soma dos números pares até N</h1>
+  <input type="number" id="inputN" placeholder="Digite N">
+  <button onclick="calcularSoma()">Calcular</button>
+  <p id="resultado"></p>
+
+  <script>
+    function somaPares(N) {
+      let soma = 0;
+      for (let i = 2; i <= N; i += 2) {
+        soma += i;
+      }
+      return soma;
+    }
+
+    function calcularSoma() {
+      const N = parseInt(document.getElementById("inputN").value);
+      const resultadoElem = document.getElementById("resultado");
+
+      if (isNaN(N) || N < 2) {
+        resultadoElem.textContent = "Digite um número inteiro maior ou igual a 2.";
+        return;
+      }
+
+      resultadoElem.textContent = `A soma de todos os números pares ≤ ${N} é: ${somaPares(N)}`;
+    }
+  </script>
+</body>
+</html>
